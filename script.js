@@ -35,13 +35,3 @@ function playRound(computerChoice, humanChoice) {
     }
 }
 
-function playGame() {
-    for(let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        playRound(computerSelection, humanSelection)
-    }
-}
-
-playGame()
-console.log(humanScore, computerScore)
