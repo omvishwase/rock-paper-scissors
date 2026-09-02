@@ -35,3 +35,14 @@ function playRound(computerChoice, humanChoice) {
     }
 }
 
+let buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        let hChoice = e.target.id;
+        let cChoice = getComputerChoice();
+        console.log(e.target.id)
+        playRound(cChoice, hChoice);
+    });
+});
+
